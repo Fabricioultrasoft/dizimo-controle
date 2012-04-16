@@ -7,7 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DizControl.Module.Win", "Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DizControl.Win", "DizControl.Win\DizControl.Win.csproj", "{901B411E-2D21-41F3-8E05-C4420D87C4B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DizControl.Tests", "DizControl.Tests\DizControl.Tests.csproj", "{8D065136-8996-4B6A-90B1-622A24C3D918}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06D429CE-362F-40ED-BF2C-7E5BA18A8F1C}"
+	ProjectSection(SolutionItems) = preProject
+		DizControl.vsmdi = DizControl.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DizControl.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		EasyTest|Any CPU = EasyTest|Any CPU
@@ -32,6 +44,12 @@ Global
 		{901B411E-2D21-41F3-8E05-C4420D87C4B0}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
 		{901B411E-2D21-41F3-8E05-C4420D87C4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{901B411E-2D21-41F3-8E05-C4420D87C4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D065136-8996-4B6A-90B1-622A24C3D918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D065136-8996-4B6A-90B1-622A24C3D918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D065136-8996-4B6A-90B1-622A24C3D918}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{8D065136-8996-4B6A-90B1-622A24C3D918}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{8D065136-8996-4B6A-90B1-622A24C3D918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D065136-8996-4B6A-90B1-622A24C3D918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

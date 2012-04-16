@@ -1,3 +1,38 @@
-﻿<?xml version="1.0" ?>
-<Application Title="DizControl" Logo="ExpressAppLogo" />
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="DizControl" Logo="ExpressAppLogo" Company="Funny Systems" Copyright="2012" Description="Sistema para controle de dízimos dos fiéis" Subtitle="Controle de Dízimo" WebSite="http://www.funnysys.com">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="11.2.8.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Fiel_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" ImageName="" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <LayoutGroup Id="Fiel" RelativeSize="100" ImageName="" Direction="Vertical" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+              <LayoutGroup Id="Fiel_col1" RelativeSize="94" ImageName="" Caption="Fiel_col1" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+                <LayoutItem Id="TxNome" RelativeSize="4" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+                <LayoutItem Id="TxUltimoNome" RelativeSize="3" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+                <LayoutItem Id="CPF" ViewItem="CPF" Index="2" RelativeSize="3" IsNewNode="True" />
+                <LayoutItem Id="DtNascimento" RelativeSize="3" Index="3" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+                <LayoutItem Id="Rg" RelativeSize="3" Index="4" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+                <TabbedGroup Id="Item1" CaptionLocation="Top" Index="5" RelativeSize="81" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="0" RelativeSize="100" Caption="Profissão" IsNewNode="True">
+                    <LayoutItem Id="Profissao" ViewItem="Profissao" Index="0" RelativeSize="100" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="100" Caption="Dízimo" IsNewNode="True">
+                    <LayoutItem Id="Dizimo" ViewItem="Dizimo" Index="0" RelativeSize="100" IsNewNode="True" />
+                  </LayoutGroup>
+                </TabbedGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Fiel_col2" RelativeSize="48" ImageName="" Caption="Fiel_col2" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="CPF" Removed="True" />
+                <LayoutItem Id="Dizimo" Removed="True" />
+                <LayoutItem Id="Profissao" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
