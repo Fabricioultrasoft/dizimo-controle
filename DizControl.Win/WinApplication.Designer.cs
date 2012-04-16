@@ -35,14 +35,17 @@ namespace DizControl.Win
             this.module5 = new DevExpress.ExpressApp.Validation.ValidationModule();
             this.module6 = new DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule();
             this.module7 = new DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule();
-
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.securitySimple = new DevExpress.ExpressApp.Security.SecurityStrategySimple();
             this.authenticationActiveDirectory1 = new DevExpress.ExpressApp.Security.AuthenticationActiveDirectory();
-            this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
+            this.mySqlConnection1 = new MySql.Data.MySqlClient.MySqlConnection();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
-            // securitySimple1
+            // module5
+            // 
+            this.module5.AllowValidationDetailsAccess = true;
+            // 
+            // securitySimple
             // 
             this.securitySimple.Authentication = this.authenticationActiveDirectory1;
             this.securitySimple.UserType = typeof(DevExpress.ExpressApp.Security.SecuritySimpleUser);
@@ -50,25 +53,24 @@ namespace DizControl.Win
             // authenticationActiveDirectory1
             // 
             this.authenticationActiveDirectory1.CreateUserAutomatically = true;
-            this.authenticationActiveDirectory1.UserType = typeof(DevExpress.ExpressApp.Security.SecuritySimpleUser);
+            this.authenticationActiveDirectory1.LogonParametersType = null;
             // 
-            // sqlConnection1
+            // mySqlConnection1
             // 
-            this.sqlConnection1.ConnectionString = "Data Source=(local);Initial Catalog=DizControl;Integrated Security=SSPI;Pooling=false";
-            this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
+            this.mySqlConnection1.ConnectionString = "server=.\\;database=DizControl;User Id=sonar;password=sonar";
             // 
             // DizControlWindowsFormsApplication
             // 
             this.ApplicationName = "DizControl";
-            this.Connection = this.sqlConnection1;
+            this.Connection = this.mySqlConnection1;
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);
+            this.Modules.Add(this.module6);
+            this.Modules.Add(this.securityModule1);
             this.Modules.Add(this.module3);
             this.Modules.Add(this.module4);
             this.Modules.Add(this.module5);
-            this.Modules.Add(this.module6);
             this.Modules.Add(this.module7);
-            this.Modules.Add(this.securityModule1);
             this.Security = this.securitySimple;
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.DizControlWindowsFormsApplication_DatabaseVersionMismatch);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
@@ -87,6 +89,6 @@ namespace DizControl.Win
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
         private DevExpress.ExpressApp.Security.SecurityStrategySimple securitySimple;
         private DevExpress.ExpressApp.Security.AuthenticationActiveDirectory authenticationActiveDirectory1;
-        private System.Data.SqlClient.SqlConnection sqlConnection1;
+        private MySql.Data.MySqlClient.MySqlConnection mySqlConnection1;
     }
 }

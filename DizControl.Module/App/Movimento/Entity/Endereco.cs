@@ -1,5 +1,7 @@
 ﻿using System;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Xpo;
+using DevExpress.Data.Filtering;
 
 namespace DizControl.Module
 {
@@ -17,17 +19,17 @@ namespace DizControl.Module
         /// <summary>
         /// Logradouro
         /// </summary>
-        private string _Logradouro;
+        private string _TxLogradouro;
 
         /// <summary>
         /// Bairro
         /// </summary>
-        private string _Bairro;
+        private string _TxBairro;
 
         /// <summary>
         /// Cidade 
         /// </summary>
-        private string _Cidade;
+        private string _TxCidade;
 
         /// <summary>
         /// Unidade da federação
@@ -44,6 +46,7 @@ namespace DizControl.Module
         /// <summary>
         /// Tipo do logradouro
         /// </summary>
+        [Custom("Caption", "Tipo")]
         public CsTipoLogradouro Tipo 
         {
             get { return _Tipo; }
@@ -53,33 +56,37 @@ namespace DizControl.Module
         /// <summary>
         /// Logradouro
         /// </summary>
-        public string Logradouro
+        [Custom("Caption", "Logradouro")]
+        public string TxLogradouro
         {
-            get { return _Logradouro; }
-            set { SetPropertyValue<string>("Logradouro", ref _Logradouro, value); }
+            get { return _TxLogradouro; }
+            set { SetPropertyValue<string>("TxLogradouro", ref _TxLogradouro, value); }
         }
 
         /// <summary>
         /// Bairro
         /// </summary>
-        public string Bairro
+        [Custom("Caption", "Bairro")]
+        public string TxBairro
         {
-            get { return _Bairro; }
-            set { SetPropertyValue<string>("Bairro", ref _Bairro, value); }
+            get { return _TxBairro; }
+            set { SetPropertyValue<string>("TxBairro", ref _TxBairro, value); }
         }
 
         /// <summary>
         /// Cidade 
         /// </summary>
-        public string Cidade
+        [Custom("Caption", "Cidade")]
+        public string TxCidade
         {
-            get { return _Cidade; }
-            set { SetPropertyValue<string>("Cidade", ref _Cidade, value); }
+            get { return _TxCidade; }
+            set { SetPropertyValue<string>("TxCidade", ref _TxCidade, value); }
         }
 
         /// <summary>
         /// Unidade da federação
         /// </summary>
+        [Custom("Caption", "Estado")]
         public CsUnidadeFederacao Estado
         {
             get { return _Estado; }
@@ -89,10 +96,24 @@ namespace DizControl.Module
         /// <summary>
         /// CEP do logradouro
         /// </summary>
+        [Custom("Caption", "CEP")]
         public uint CEP
         {
             get { return _CEP; }
             set { SetPropertyValue<uint>("CEP", ref _CEP, value); }
+        }
+        #endregion
+
+        #region Rule Business
+        /// <summary>
+        /// Busca o endereço pelo cep
+        /// </summary>
+        /// <param name="session">sessão atual</param>
+        /// <param name="cep">CEP</param>
+        /// <returns>Endereço</returns>
+        public static Endereco GetEndereco(Session session, uint cep) 
+        {
+            return session.FindObject<Endereco>(CriteriaOperator.Parse("[CEP] = ?", cep));
         }
         #endregion
     }

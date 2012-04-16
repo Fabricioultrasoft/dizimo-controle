@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sourcemonitor_commands>
+    <write_log>true</write_log>
+    <command>
+        <project_file>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\target\metrics-report.xml.smp</project_file>
+        <parse_utf8_files>true</parse_utf8_files>
+        <project_language>C#</project_language>
+        <source_directory>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest</source_directory>
+        <checkpoint_name>1.0-SNAPSHOT</checkpoint_name>
+        <checkpoint_date>2012-04-11T13:43:52</checkpoint_date>
+        <file_extensions>*.cs|*.Designer.cs</file_extensions>
+        <include_subdirectories>true</include_subdirectories>
+        <ignore_headers_footers>false</ignore_headers_footers>
+        <export>
+            <export_file>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\target\metrics-report.xml</export_file>
+            <export_type>2</export_type>
+            <export_option>1</export_option>
+            <export_option>3</export_option>
+        </export>
+        <source_subdirectory_list>
+            <exclude_subdirectories>true</exclude_subdirectories>
+            <source_subtree>CompileTest.Tests\</source_subtree>
+            <source_subdirectory>obj\debug</source_subdirectory>
+            <source_subdirectory>obj\release</source_subdirectory>
+        </source_subdirectory_list>
+    </command>
+</sourcemonitor_commands>

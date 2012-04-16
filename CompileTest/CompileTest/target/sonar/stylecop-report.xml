@@ -1,0 +1,4 @@
+<StyleCopViolations>
+  <Violation Section="Root.CompileTest.Program" LineNumber="8" Source="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\Program.cs" RuleNamespace="Microsoft.StyleCop.CSharp.MaintainabilityRules" Rule="AccessModifierMustBeDeclared" RuleId="SA1400">The class must have an access modifier.</Violation>
+  <Violation Section="Root.CompileTest.Program.Main%string[]" LineNumber="10" Source="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\Program.cs" RuleNamespace="Microsoft.StyleCop.CSharp.MaintainabilityRules" Rule="AccessModifierMustBeDeclared" RuleId="SA1400">The method must have an access modifier.</Violation>
+</StyleCopViolations>

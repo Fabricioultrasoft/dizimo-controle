@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.gallio.org/">
+  <testPackage shadowCopy="false" debug="false">
+    <files>
+      <file>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.dll</file>
+    </files>
+    <hintDirectories />
+    <excludedFrameworkIds />
+    <properties />
+  </testPackage>
+  <testModel>
+    <test id="c2722843734a7a54" name="Root" fullName="" isTestCase="false">
+      <codeReference />
+      <codeLocation />
+      <metadata>
+        <entry key="TestKind">
+          <value>Root</value>
+        </entry>
+      </metadata>
+      <children>
+        <test id="69e73a65bc88090f" name="CompileTest.Tests" fullName="CompileTest.Tests" isTestCase="false">
+          <codeReference assembly="CompileTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <codeLocation path="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.DLL" />
+          <metadata>
+            <entry key="TestKind">
+              <value>Assembly</value>
+            </entry>
+            <entry key="CodeBase">
+              <value>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.DLL</value>
+            </entry>
+            <entry key="Copyright">
+              <value>Copyright ©  2012</value>
+            </entry>
+            <entry key="FileVersion">
+              <value>1.0.0.0</value>
+            </entry>
+            <entry key="Product">
+              <value>CompileTest.Tests</value>
+            </entry>
+            <entry key="Title">
+              <value>CompileTest.Tests</value>
+            </entry>
+            <entry key="Version">
+              <value>1.0.0.0</value>
+            </entry>
+            <entry key="Framework">
+              <value>MSTest v10.0.0.0</value>
+            </entry>
+            <entry key="File">
+              <value>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.DLL</value>
+            </entry>
+          </metadata>
+          <children>
+            <test id="c712d0a33f4d6b2" name="UnitTest1" fullName="CompileTest.Tests/UnitTest1" isTestCase="false">
+              <codeReference assembly="CompileTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="CompileTest.Tests" type="CompileTest.Tests.UnitTest1" />
+              <codeLocation path="c:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\UnitTest1.cs" />
+              <metadata>
+                <entry key="TestKind">
+                  <value>Fixture</value>
+                </entry>
+              </metadata>
+              <children>
+                <test id="7e1865f938368b8e" name="TestMethod1" fullName="CompileTest.Tests/UnitTest1/TestMethod1" isTestCase="true">
+                  <codeReference assembly="CompileTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="CompileTest.Tests" type="CompileTest.Tests.UnitTest1" member="TestMethod1" />
+                  <codeLocation path="c:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\UnitTest1.cs" line="64" />
+                  <metadata>
+                    <entry key="TestKind">
+                      <value>Test</value>
+                    </entry>
+                  </metadata>
+                  <children />
+                  <parameters />
+                </test>
+              </children>
+              <parameters />
+            </test>
+          </children>
+          <parameters />
+        </test>
+      </children>
+      <parameters />
+    </test>
+    <annotations />
+  </testModel>
+  <testPackageRun startTime="2012-04-11T18:13:12.289268-04:00" endTime="2012-04-11T18:13:26.5552124-04:00">
+    <testStepRun startTime="2012-04-11T18:13:16.855652-04:00" endTime="2012-04-11T18:13:26.5562138-04:00">
+      <testStep id="f8d91ad97b797753" name="Root" fullName="" testId="c2722843734a7a54" isPrimary="true" isTestCase="false" isDynamic="false">
+        <codeReference />
+        <codeLocation />
+        <metadata>
+          <entry key="TestKind">
+            <value>Root</value>
+          </entry>
+        </metadata>
+      </testStep>
+      <children>
+        <testStepRun startTime="2012-04-11T18:13:16.9127318-04:00" endTime="2012-04-11T18:13:26.4460598-04:00">
+          <testStep id="46b7e579353e4ddc" name="CompileTest.Tests" fullName="CompileTest.Tests" testId="69e73a65bc88090f" isPrimary="true" isTestCase="false" isDynamic="false">
+            <codeReference assembly="CompileTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+            <codeLocation path="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.DLL" />
+            <metadata>
+              <entry key="TestKind">
+                <value>Assembly</value>
+              </entry>
+              <entry key="CodeBase">
+                <value>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.DLL</value>
+              </entry>
+              <entry key="Copyright">
+                <value>Copyright ©  2012</value>
+              </entry>
+              <entry key="FileVersion">
+                <value>1.0.0.0</value>
+              </entry>
+              <entry key="Product">
+                <value>CompileTest.Tests</value>
+              </entry>
+              <entry key="Title">
+                <value>CompileTest.Tests</value>
+              </entry>
+              <entry key="Version">
+                <value>1.0.0.0</value>
+              </entry>
+              <entry key="Framework">
+                <value>MSTest v10.0.0.0</value>
+              </entry>
+              <entry key="File">
+                <value>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.DLL</value>
+              </entry>
+            </metadata>
+          </testStep>
+          <children>
+            <testStepRun startTime="2012-04-11T18:13:25.5638264-04:00" endTime="2012-04-11T18:13:26.0975726-04:00">
+              <testStep id="165c5a92e5908d5a" name="UnitTest1" fullName="CompileTest.Tests/UnitTest1" testId="c712d0a33f4d6b2" isPrimary="true" isTestCase="false" isDynamic="false">
+                <codeReference assembly="CompileTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="CompileTest.Tests" type="CompileTest.Tests.UnitTest1" />
+                <codeLocation path="c:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\UnitTest1.cs" />
+                <metadata>
+                  <entry key="TestKind">
+                    <value>Fixture</value>
+                  </entry>
+                </metadata>
+              </testStep>
+              <children>
+                <testStepRun startTime="2012-04-11T18:13:25.5668306-04:00" endTime="2012-04-11T18:13:25.7901428-04:00">
+                  <testStep id="4f4ede34f5da01f4" name="TestMethod1" fullName="CompileTest.Tests/UnitTest1/TestMethod1" testId="7e1865f938368b8e" isPrimary="true" isTestCase="true" isDynamic="false">
+                    <codeReference assembly="CompileTest.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" namespace="CompileTest.Tests" type="CompileTest.Tests.UnitTest1" member="TestMethod1" />
+                    <codeLocation path="c:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\UnitTest1.cs" line="64" />
+                    <metadata>
+                      <entry key="TestKind">
+                        <value>Test</value>
+                      </entry>
+                    </metadata>
+                  </testStep>
+                  <children />
+                  <result assertCount="0" duration="0">
+                    <outcome status="passed" />
+                  </result>
+                  <testLog>
+                    <streams />
+                    <attachments />
+                  </testLog>
+                </testStepRun>
+              </children>
+              <result assertCount="0" duration="0">
+                <outcome status="passed" />
+              </result>
+              <testLog>
+                <streams />
+                <attachments />
+              </testLog>
+            </testStepRun>
+          </children>
+          <result assertCount="0" duration="9.5239349">
+            <outcome status="passed" />
+          </result>
+          <testLog>
+            <streams>
+              <stream name="MSTest Output">
+                <body>
+                  <contents>
+                    <text><![CDATA[Loading C:\Users\jeysson.paiva\AppData\Local\Temp\Gallio\MSTestAdapter\fen4dodi.y2l\tests.runconfig...
+Loading C:\Users\jeysson.paiva\AppData\Local\Temp\Gallio\MSTestAdapter\fen4dodi.y2l\tests.vsmdi...
+
+Search path(s) for tests:
+C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug
+C:\Users\jeysson.paiva\AppData\Local\Temp\Gallio\MSTestAdapter\fen4dodi.y2l
+Search path(s) for default test settings:
+C:\Users\jeysson.paiva\AppData\Local\Temp\Gallio\MSTestAdapter\fen4dodi.y2l
+
+Starting execution...
+
+Results               Top Level Tests
+-------               ---------------
+Passed                (SelectedTests/)CompileTest.Tests.UnitTest1.TestMethod1
+1/1 test(s) Passed
+
+Summary
+-------
+Test Run Completed.
+  Passed  1
+  ---------
+  Total   1
+Results file:  C:\Users\jeysson.paiva\AppData\Local\Temp\Gallio\MSTestAdapter\fen4dodi.y2l\tests.trx
+Test Settings: Gallio Test Run
+]]></text>
+                  </contents>
+                </body>
+              </stream>
+            </streams>
+            <attachments />
+          </testLog>
+        </testStepRun>
+      </children>
+      <result assertCount="0" duration="14.236925099999999">
+        <outcome status="passed" />
+      </result>
+      <testLog>
+        <streams />
+        <attachments />
+      </testLog>
+    </testStepRun>
+    <statistics assertCount="0" duration="14.2635613" runCount="1" passedCount="1" failedCount="0" inconclusiveCount="0" skippedCount="0" testCount="1" stepCount="4">
+      <outcomeSummaries>
+        <outcomeSummary count="1">
+          <outcome status="passed" />
+        </outcomeSummary>
+      </outcomeSummaries>
+    </statistics>
+  </testPackageRun>
+  <logEntries>
+    <logEntry severity="info" message="Host started at 11/04/2012 18:13:14." />
+    <logEntry severity="info" message="Running under CLR v4.0.30319 runtime." />
+    <logEntry severity="debug" message="Listening for connections on IPC port: 'IsolatedProcessHost.1948de7f298a1749'" />
+    <logEntry severity="info" message="Host stopped at 11/04/2012 18:13:26." />
+    <logEntry severity="info" message="Host process exited with code: 0" />
+  </logEntries>
+</report>

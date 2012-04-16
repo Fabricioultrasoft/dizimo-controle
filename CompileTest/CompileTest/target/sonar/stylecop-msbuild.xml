@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="StyleCopLaunch" ToolsVersion="3.5">
+    <PropertyGroup>
+        <ProjectRoot>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest</ProjectRoot>
+        <StyleCopRoot>C:\Program Files\Microsoft StyleCop 4.3.3.0</StyleCopRoot>
+    </PropertyGroup>
+    <UsingTask TaskName="StyleCopTask" AssemblyFile="$(StyleCopRoot)\Microsoft.StyleCop.dll"></UsingTask>
+    <ItemGroup>
+        <Project Include="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\CompileTest.csproj"></Project>
+    </ItemGroup>
+    <Target Name="StyleCopLaunch">
+        <CreateItem Include="%(Project.RootDir)%(Project.Directory)**\*.cs">
+            <Output ItemName="SourceAnalysisFiles" TaskParameter="Include"></Output>
+        </CreateItem>
+        <StyleCopTask MaxViolationCount="-1" OverrideSettingsFile="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\target\sonar\sonar.StyleCop"
+            OutputFile="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\target\sonar\stylecop-report.xml"
+            TreatErrorsAsWarnings="true" ForceFullAnalysis="true"
+            SourceFiles="@(SourceAnalysisFiles);@(CSFile)"
+            ProjectFullPath="C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.sln"></StyleCopTask>
+    </Target>
+</Project>

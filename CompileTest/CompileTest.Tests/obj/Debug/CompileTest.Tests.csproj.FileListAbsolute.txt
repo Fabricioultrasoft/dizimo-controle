@@ -1,0 +1,5 @@
+C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.dll
+C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\bin\Debug\CompileTest.Tests.pdb
+C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\obj\Debug\CompileTest.Tests.dll
+C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest.Tests\obj\Debug\CompileTest.Tests.pdb

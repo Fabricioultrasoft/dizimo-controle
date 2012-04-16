@@ -1,0 +1,8 @@
+<PartCoverSettings>
+  <Target>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\bin\Debug\CompileTest.exe</Target>
+  <TargetWorkDir>C:\Users\jeysson.paiva\Documents\Visual Studio 2010\Projects\CompileTest\CompileTest\bin\Debug</TargetWorkDir>
+  <TargetArgs>
+  </TargetArgs>
+  <LogLevel>126</LogLevel>
+  <DisableFlattenDomains>True</DisableFlattenDomains>
+</PartCoverSettings>

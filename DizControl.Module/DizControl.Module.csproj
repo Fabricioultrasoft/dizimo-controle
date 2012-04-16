@@ -87,6 +87,7 @@
     <Reference Include="DevExpress.Xpo.v11.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System">
       <Name>System</Name>
       <Private>False</Private>
@@ -102,8 +103,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\Movimento\Domain\CsTipoLogradouro.cs" />
+    <Compile Include="App\Movimento\Domain\CsUnidadeFederacao.cs" />
+    <Compile Include="App\Movimento\Entity\Dizimo.cs" />
     <Compile Include="App\Movimento\Entity\Endereco.cs" />
-    <Compile Include="App\Movimento\Entity\Fieis.cs" />
+    <Compile Include="App\Movimento\Entity\Fiel.cs" />
+    <Compile Include="App\Movimento\Entity\FielEndereco.cs" />
+    <Compile Include="App\Movimento\Entity\Profissao.cs" />
+    <Compile Include="App\Movimento\Entity\ProfissaoFiel.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -122,6 +128,7 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
