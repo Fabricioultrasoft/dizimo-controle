@@ -1,0 +1,1 @@
+Sistema para controle de contribuição de dízimos dos fiéis.
